@@ -1,0 +1,378 @@
+/******************************************* sec1/nav/home**********************************/
+.nav{
+    z-index:1;
+    border-bottom:0.5px solid rgba(255, 255, 255, 0.185) ;
+    font-family: 'Alegreya', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1f252818;
+}
+.slider{
+    height: 100vh;
+}
+.panel{
+    width: 40px;
+    height:40px;
+    background-color:#1f2528;
+    position: fixed;
+    left: 0;
+    top:130px
+}
+.car{
+    width: 38%;
+    position:absolute;
+    top: calc(12rem + 1.5vw);
+    left: calc(80rem + 1.5vw);
+    animation: 1s anime1 ease-in-out forwards ;
+    display: none;
+}
+.fs{
+    font-size: calc(30px + 3vw);
+    font-weight: 900;
+}
+@keyframes  anime1{
+    0%{
+        left: calc(80rem + 1.5vw);
+    }
+    100%{
+        left: calc(25rem + 1.5vw);
+    }
+}
+.nav-link{
+    color: white !important;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color:#f25454 !important;
+}
+.link{
+    color:#f25454!important;
+}
+.ul{
+    list-style:none;
+    width: 15%;
+    padding:0;
+}
+.icon{
+    color: white;
+    transition: 0.5s;
+}
+.icon:hover{
+    color: #f25454;
+}
+.anime{
+    width: 30px;
+    height: 44px;
+    border:#f8f8f8 solid 1px;
+    border-radius:34px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: calc(-10rem + 1.5vw);
+}
+.anime div{
+    width:8px;
+    height:8px;
+    border-radius: 50% ;
+    background-color: #f8f8f8;
+    animation: animation 2s infinite ease-out 2s ;
+    position: absolute;
+    top: 5px;
+    opacity:0;
+}
+@keyframes animation {
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+
+    35%{
+        opacity:0.5;
+    }
+
+    50%{
+        top:20px;
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+
+    }
+}
+.next{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-left:0;
+    top: 330px;
+    left:0;
+}
+.prev{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-left:0;
+    top: 280px;
+}
+.control{
+    width: 20px;
+    color: white;
+}
+
+@media screen and (max-width:1200px) and (min-width:992px){
+    @keyframes  anime1{
+        0%{
+            left: calc(80rem + 1.5vw);
+        }
+        100%{
+            left: calc(20rem + 1.5vw);
+        }
+    }
+}
+@media screen and (max-width:992px) and (min-width:768px){
+    @keyframes  anime1{
+        0%{
+            left: calc(80rem + 1.5vw);
+        }
+        100%{
+            left: calc(14rem + 1.5vw);
+        }
+}
+    .car{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:576px){
+    @keyframes  anime1{
+        0%{
+            left: calc(80rem + 1.5vw);
+        }
+        100%{
+            left: calc(16rem + 1.5vw);
+        }
+}
+
+}
+@media screen and (max-width:576px){
+    @keyframes  anime1{
+        0%{
+            left: calc(80rem + 1.5vw);
+        }
+        100%{
+            left: calc(16rem + 1.5vw);
+        }
+}
+}
+/******************************************* sec2/about*******************************/
+.a{
+    font-size: 75px;
+    color: rgba(128, 128, 128, 0.144);
+}
+.b{
+    font-size: 40px;
+    position: relative;
+    bottom: 3.8rem;
+}
+.line{
+    width: 40px;
+    height: 1px;
+    background-color: #1f2528;
+    transition: 0.5s;
+    margin: auto;
+    position: relative;
+    bottom: 3.2rem;
+}
+.line:hover{
+    width: 60px;
+}
+.p{
+    font-family: 'Alegreya', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #3e494e94;
+    margin-top: -1.5rem;
+}
+.pa-1{
+    color: #3e494ee1;
+    margin-bottom: 1.8rem;
+}
+.pa-2{
+    color: #3e494ee1;
+    font-weight: bold;
+}
+.color{
+    height: 5px;
+    background-color: rgba(128, 128, 128, 0.26);
+    margin-top:-8px ;
+    margin-bottom: 1.5rem;
+}
+.color-1{
+    width: 80%;
+    height: 5px;
+    background-color:#f25454 ;
+}
+.color-2{
+    width: 95%;
+    height: 5px;
+    background-color:#f25454 ;
+}
+.color-3{
+    width: 85%;
+    height: 5px;
+    background-color:#f25454 ;
+}
+.color-4{
+    width: 70%;
+    height: 5px;
+    background-color:#f25454 ;
+}
+/******************************************* sec3/team*******************************/
+.img{
+    width: 100%;
+    transition: 0.5s;
+}
+.img:hover{
+    transform: scale(1.2);
+}
+.michael{
+    font-size: 18px;
+    font-weight:600;
+    margin-top: 1.2rem;
+    margin-bottom: -1px;
+    transition: 0.5s;
+}
+.michael:hover{
+    color: #f25454;
+}
+.pa-3{
+    font-size: calc(20px + 1.5vw);
+}
+.button{
+    padding-top:calc(0px + 1.2vw); 
+    padding-bottom:calc(0px + 1.2vw); 
+    padding-left:calc(3px + 1.2vw); 
+    padding-right:calc(3px + 1.2vw); 
+    border: none;
+    background-color: #f25454;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: #f25454bd;
+}
+/******************************************* sec4/services *******************************/
+.bg{
+    background-color: #1f252809;
+}
+.icon-1{
+    color: #f25454;
+    margin-top: 1.2rem;
+}
+/******************************************* sec5/ reviews *******************************/ 
+.pa-7{
+    color: #3e494ee1;
+    font-weight: bold;
+    margin-bottom: -5px;
+}
+.img-1{
+    width: 110px;
+    height: 110px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.img-1:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+/******************************************* sec6/getin *******************************/
+.pa-4{
+    font-size: calc(18px + 1.5vw);
+    line-height: calc(18px + 1.5vw);
+}
+.input-2{
+    border: 0.5px solid rgba(105, 105, 105, 0.233);
+    padding: 0.8rem;
+}
+.input-1{
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+}
+.button-4{
+    padding-top:calc(0.2px + 1.2vw); 
+    padding-bottom:calc(0.2px + 1.2vw); 
+    padding-left:calc(2.5px + 1.2vw); 
+    padding-right:calc(2.5px + 1.2vw); 
+}
+/******************************************* sec7/contact *******************************/
+.contact-1{
+    width: 100%;
+    background-position: center;
+    background-image: url(/images/dotted-map.png);
+    position: relative;
+    background-size: contain;
+}
+.contact-2{
+    width: 100%;
+    background-color: #1f2528ec;
+}
+.pa-5{
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.pa-5:hover{
+    color:#f25454;
+}
+.para p{
+    color: gray;
+    margin-bottom: -1px;
+}
+.button-1{
+    color: gray;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 0.3rem 0.5rem ;
+    transition: 0.5s;
+}
+.button-1:hover{
+    color:#f25454;
+    border: 1px solid #f25454;
+}
+.button-3{
+    color: white;
+    border: none;
+    background-color: #f254549b;
+    padding: 0.8rem 1rem;
+    transition: 0.5s;
+    position: relative;
+    bottom: 35px;
+}
+.button-3:hover{
+    color: white;
+    border: none;
+    background-color: #f25454;
+}
+/******************************************* sec8/footer *******************************/
+.contact-3{
+    background-color: #1f2528;
+}
+.pa-6{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pa-6:hover{
+    color:#f25454;
+}
